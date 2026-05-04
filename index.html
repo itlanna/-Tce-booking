@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#0f172a" />
+  <title>PMS Mobile App</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #0f172a;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      position: fixed;
+      inset: 0;
+    }
+
+    .mobile-shell {
+      width: 100vw;
+      height: 100dvh;
+      background: #0f172a;
+      overflow: hidden;
+    }
+
+    .app-frame {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+      background: #ffffff;
+    }
+
+    @supports not (height: 100dvh) {
+      .mobile-shell {
+        height: 100vh;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mobile-shell">
+    <iframe
+      class="app-frame"
+      src="https://script.google.com/macros/s/AKfycbz9Dc6pEjT2ERZzmzf3skrIA7LrTDARx4Jq3dLJy6HHUv3keh-6jnXO58HZjklaCXFOdQ/exec?view=mobile"
+      allow="fullscreen"
+      allowfullscreen>
+    </iframe>
+  </div>
+</body>
+</html>
